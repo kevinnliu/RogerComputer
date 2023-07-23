@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Roger's Computer Technology Inc.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<script LANGUAGE="JavaScript">          
+var supported = navigator.userAgent.indexOf("Mozilla")==0 &&
+navigator.userAgent.substring(8,9) >= 3;				
+msg = new Array(20)		
+msg[0] = "Roger's Computer Technology"						          
+if (supported) {
+			var regn = new Image()
+			regn.src = "images/outsd3.gif"
+			var rega = new Image()
+ 			rega.src = "images/dranim.gif"
+			}
+          function act(imgName,stat) {
+			window.status = msg[stat]
+			if (supported){
+             		document[imgName].src = eval(imgName + 'a.src')
+			}
+          }
+          function inact(imgName) {
+			window.status = ""
+          		if (supported){
+				document[imgName].src = eval(imgName + 'n.src')
+			}
+          }
+</script>
+</head>
+<body>
+<table width="100%" height="100%" border="0" align="center">
+  <tr>
+    <td><table border="0" align="center">
+    <tr>
+       <td align="left" bgcolor="#FFFF99">
+           <h2>Business Hours<br/><br/> 
+             Monday - Friday between <u>1130</u> and <u>1900</u> <br/><br/>                 
+             Saturday between <u>1130</u> and <u>1800</u><br/><br/>        
+             Sunday Closed</h2>
+       </td>
+       </tr>
+        <tr align="center" valign="bottom"> 
+          <td width="649" border="0">
+        <a href="web/index.php"><img src="images/intrologo1.jpg" width="649" height="100" border="0"></a>
+	  	<a href="web/index.php"><img src="images/outsd1.gif" width="649" height="127" border="0"></a><a href="web/index.php"><img src="images/outsd2.gif" width="458" height="200" border="0"></a><a href="web/index.php" onMouseOver="act('reg','0');return true" onMouseOut="inact('reg');return true"><img src="images/outsd3.gif" name="reg" width="91" height="200" border="0"></a><a href="web/index.php"><img src="images/outsd4.gif" width="100" height="200" border="0"></a><a href="web/index.php"><img src="images/outsd5.gif" width="649" height="63" border="0"></a>
+         </td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+</body>
+</html>
